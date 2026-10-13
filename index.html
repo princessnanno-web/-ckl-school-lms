@@ -1,0 +1,9 @@
+// 1. استيراد مكتبة Supabase
+import { createClient } from '@supabase/supabase-js';
+
+// 2. لصق المفاتيح الخاصة بمشروعك هنا
+const SUPABASE_URL = 'sb_publishable_EQSv058LqImsKmDwo3eEsg_G3VJ6dtj';
+const SUPABASE_ANON_KEY = ‘eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxeHRobG1neHJwcXJkdmVvbmJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4NDc3MjIsImV4cCI6MjEwNzQyMzcyMn0.5c0k7CBQx0HQm7pne2vtCaKdO1xFHrd7mvesaipP0C8';
+
+// 3. إنشاء الاتصال المباشر بقاعدة البيانات
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
